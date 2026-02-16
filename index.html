@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
@@ -44,7 +45,8 @@
         </nav>
     </header>
     <main>
-        <section class="hero bg-primary text-white d-flex justify-content-center align-items-center p-5 h-75">
+
+        <section class="hero bg-primary text-white d-flex justify-content-center align-items-center flex-wrap p-5 h-75">
             <div style="max-width: 450px;">
                 <h1 class="my-3">Notre équipe</h1>
                 <p class="lh-lg">Plus de 130 professionnels dévoués animés par une passion commune pour la réalisation d'un travail exceptionnel.</p>
@@ -59,22 +61,22 @@
                 <div class="profil1 mx-5">
                     <img src="https://png.pngtree.com/png-vector/20260109/ourmid/pngtree-flat-male-avatar-with-glasses-and-beard-isolated-on-a-transparent-png-image_18444414.webp" alt="" width="250px">
                     <h2>Jeffrey Brown</h2>
-                    <h4>Leader créatif</h4>
+                    <h4 class="text-warning">Leader créatif</h4>
                 </div>
                 <div class="profil2 mx-5">
                     <img src="https://png.pngtree.com/png-vector/20260109/ourmid/pngtree-flat-male-avatar-with-glasses-and-beard-isolated-on-a-transparent-png-image_18444414.webp" alt="" width="250px">
                     <h2>Ann Richmond</h2>
-                    <h4>Développeur Web</h4>
+                    <h4 class="text-warning">Développeur Web</h4>
                 </div>
                 <div class="profil3 mx-5">
                     <img src="https://png.pngtree.com/png-vector/20260109/ourmid/pngtree-flat-male-avatar-with-glasses-and-beard-isolated-on-a-transparent-png-image_18444414.webp" alt="" width="250px">
                     <h2>Alex Greenfield</h2>
-                    <h4>Ingénieur Système</h4>
+                    <h4 class="text-warning">Ingénieur Système</h4>
                 </div>
                 <div class="profil4 mx-5">
                     <img src="https://png.pngtree.com/png-vector/20260109/ourmid/pngtree-flat-male-avatar-with-glasses-and-beard-isolated-on-a-transparent-png-image_18444414.webp" alt="" width="250px">
                     <h2>Alex Greenfield</h2>
-                    <h4>Chef de projet</h4>
+                    <h4 class="text-warning">Chef de projet</h4>
                 </div>
             </div>
             <p class="my-5">Image de <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Freepik</a></p>
@@ -91,9 +93,9 @@
             </div>
         </section>
         <section class="aide bg-primary p-2 text-dark bg-opacity-75 ">
-            <h1 class="text-center">Besoin d'aide?</h1>
-            <div class="m-5 bg-white">
-                <div class="p-4">
+            <h1 class="text-center text-white mt-3">Besoin d'aide?</h1>
+            <div class="m-5 bg-white d-flex  flex-wrap">
+                <div class="p-4  " style="width: 500px;">
                     <div>
                         <h3 class="py-3">Contacter le service commercial</h3>
                         <p>Tél. : (010) 456 7890</p>
@@ -108,7 +110,7 @@
                         <p>822 Fancher Drive, Texas, États-Unis</p>
                     </div>
                 </div>
-                <div class="p-4 d-flex flex-column ">
+                <div class="p-4  d-flex flex-column" style="width: 700px;">
                     <h2>Besoin d'aide ? Contactez-nous</h2>
                     <input class="p-2 my-1 border border-0 border-bottom" type="text" placeholder="Enter your Name">
                     <input class="p-2 my-1 border border-0 border-bottom" type="text" placeholder="Enter a valid email address">
@@ -116,11 +118,52 @@
                     <textarea class="form-control border border-0 border-bottom mb-2" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                     <label for="floatingTextarea2">Comments</label>
                     </div>
-                    <button type="button" class="btn btn-warning">Envoyer un message</button>
+                    <button type="button" class="btn btn-warning btn-lg">Envoyer un message</button>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="text-bg-primary">
+        <section class="footer1 mx-4  d-flex justify-content-center align-items-center flex-wrap text-center lh-lg ">
+            <div class="icon1 mx-4 py-4  " style="width: 250px;">
+                <i class="fa-solid fa-location-dot fs-1 m-4"></i>
+                <p>14 E 12th St, New York</p>
+            </div>
+            <div class="icon2 mx-4 py-4" style="width: 250px;">
+                <i class="fa-solid fa-phone fs-1 m-4"></i>
+                <p>+1 299-670-9615</p>
+            </div>
+            <div class="icon3 mx-4 py-5 " style="width: 250px;">
+                <i class="fa-solid fa-comment-dots fs-1 m-4"></i>
+                <p>Chat en direct</p>
+            </div>
+            <div class="icon4 mx-4 py-5 " style="width: 250px;">
+                <i class="fa-solid fa-envelope fs-1 m-4"></i>
+                <p>hi@company.com</p>
+            </div>
+        </section>
+        <section class="footer2 mx-5 py-5 border-top d-flex flex-wrap">
+            <div class="div1" style="width: 600px;">
+                <img src="https://assets.nicepagecdn.com/d2cc3eaa/6374224/images/logo-hostig-w.png" alt="" width="250px">
+                <h2 class="my-4">Des services d'hébergement web fiables et adaptés à vos besoins. Bénéficiez d'une assistance experte et d'une infrastructure fiable.</h2>
+                <p class="mb-5">Image de <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Freepik</a></p>
+            </div>
+            <div class="d-flex flex-column lh-lg mb-4">
+                <h2 class="w-100 py-2 border-bottom">Aide</h2>
+                <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">FAQ</a>
+                <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Services</a>
+                <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Nous contacter</a>
+                <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Actualités et blog</a>
+            </div>
+            <div class="d-flex flex-column lh-lg mb-4">
+                <h2 class="w-100 py-2 border-bottom">Services</h2>
+                <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Hébergement mutualisé</a>
+                <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">VPS géré</a>
+                <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Services dédiés</a>
+                <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Enregistrement de domaine</a>
+            </div>
+        </section>
+    </footer>
         
 
 
